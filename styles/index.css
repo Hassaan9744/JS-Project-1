@@ -1,0 +1,57 @@
+@import "https://unpkg.com/open-props";
+
+
+body {
+    background: rgb(59,103,158);
+    background: -moz-linear-gradient(-45deg,  rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+    background: linear-gradient(135deg,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 );
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    
+    background-color: #083a74;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    min-height: 450px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#login-btn{
+    color: rgb(104, 85, 224);
+    width:100px;
+    font-weight: bolder;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(104, 85, 224, 1);
+}
+/* button:hover {
+    color: white;
+    width:100px;
+    
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
+  } */
+  
+  
+
+::placeholder{
+    color: white;
+}
+
+
+input{
+    color: white;
+    background-color: #1e5785;
+    box-shadow: inset rgba(0, 0, 0.25) 0px 14px 28px,;
+    width: 200px;
+    height: 30px;
+    border: 2px black;
+}
