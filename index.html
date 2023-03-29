@@ -9,29 +9,76 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/bootstrap.css">
   <link rel="stylesheet" href="./styles/index.css">
-   <!-- Toastify -->
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-   <title>Admin Login</title>
-  </head>
-  
-  <body>
-    <main>
-      <div class="container col-5" id="form">
-        <h3 class="mb-4" style="color: white;">Admin Login</h3>
-        <input type="text" class="mb-4" placeholder="Full Name" id="name">
-        <input type="text" class="mb-4" placeholder="Email" id="mail">
-        <input type="text" class="mb-4" placeholder="Password" id="password">
-        <button id="login-btn" class="mb-4" onclick="login()" >Login</button>
-        <a href="password.html">Forgot Password?</a>
+  <!-- Toastify -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <title>Admin Login</title>
+</head>
+
+<body class="d-flex align-items-center justify-content-center" id="BODY">
+  <header class="py-3 d-none" id="header">
+    
+  </header>
+  <main>
+    <div class="container col-5" id="form">
+      <h3 class="mb-4" style="color: white;">Admin Login</h3>
+      <input type="text" class="mb-4" placeholder="Full Name" id="name">
+      <input type="text" class="mb-4" placeholder="Email" id="mail">
+      <input type="text" class="mb-4" placeholder="Password" id="password">
+      <button id="login-btn" class="mb-4" onclick="login()">Login</button>
+      <a href="password.html">Forgot Password?</a>
+    </div >
+
+    <div class="col-12 d-none" id="welcome-page">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <div class="col-12 col-md-6 mb-3 mb-md-0">
+                      <h4 class="text-center">Input</h4>
+                      <div class="border rounded-3 p-4 d-flex align-items center" style="height:122px">
+                          <div class="input-group">
+                              <input type="text" class="form-control bg-transparent"
+                                  placeholder="Type City Name here" id="our-input">
+                              
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="row mt-3 mt-md-5 ">
+              <div class="col-12 col-md-6 mb-3 mb-md-0">
+                  <h4 class="text-center"> Buttons</h4>
+                  <div class="border rounded-3 py-4 text-center" id="btn-box">
+
+                      <button class="btn btn-danger col-11 mb-1" onclick="printCities()">Print All Cities</button>
+                      <button class="btn btn-danger col-11 mb-1" onclick="addCity()">Add Your City In
+                          List</button>
+                      <button class="btn btn-danger col-11 mb-1" onclick="checkCity()"> Check Your City In
+                          List</button>
+
+
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 ">
+                  <h4 class="text-center">Output / Result</h4>
+                  <div class="border rounded-3 py-4 text-center" id="output" style="min-height: 272px">
+                  </div>
+                  <div class="text-center">
+                      <button class="btn btn-outline-secondary mt-3" id="clear-output">Clear Output</button>
+
+                  </div>
+              </div>
+          </div>
       </div>
-      
-    </main>
-    <footer>
-      
-      <!-- font awseom -->
-      <script src="https://kit.fontawesome.com/a4e31d149a.js" crossorigin="anonymous"></script>
-  <!-- Toastify Js -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  </main>
+  <footer>
+
+    <!-- font awseom -->
+    <script src="https://kit.fontawesome.com/a4e31d149a.js" crossorigin="anonymous"></script>
+    <!-- Toastify Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
@@ -40,3 +87,4 @@
 </body>
 
 </html>
+

@@ -9,9 +9,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 );
     
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
 }
 
 #form {
